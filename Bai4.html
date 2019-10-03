@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Fibonacci(num) {
+        if(num === 0) {
+            return 0;
+        }
+        if(num === 1) {
+            return 1;
+        }
+        return Fibonacci(num - 1) + Fibonacci(num - 2);
+    }
+
+    let i=2;
+    while(true) {
+        if(Fibonacci(i)%5==0) {
+            document.writeln("Số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + Fibonacci(i));
+            break;
+        }
+        i++;
+    }
+</script>
+</body>
+</html>
